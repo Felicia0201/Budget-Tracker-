@@ -1,5 +1,36 @@
-# Budget-Tracker-
+# Budget-Tracker-design
 This budget tracks income income and expenses and displays a summary.
+# Software Design: Budget Tracker Design
+
+**Course:** Software Design & Logic
+**Author:** FELICIA BENSON
+**Deliverable:** Algorithm Design (IPO, Pseudocode)
+
+## 1.Problem: Description and Scope
+Freelancers need a console-based interface to log earnings and spending across specific categories, validate that menu choices and monetary amounts are valid, and generate a monthly financial summary to evaluate their profit, loss, or break-even status.
+
+**Scope:**
+* Features a continuous main menu loop with two hierarchical submenus (Income Menu and Expense Menu).
+* Enforces menu choice validation for the Main Menu (rejecting selections outside 1–4) and Submenus (rejecting selections outside 1–3).
+*Validates monetary entry inputs to ensure amounts are non-negative ($\ge 0$).
+*Categorizes and aggregates income (Design, Coding, User Documentation) and expenses (Software, Equipment, Workspace) in memory during execution.
+*Calculates and displays net financial standing along with a status message (Profit, Loss, or Even) on demand.
+*Terminates execution cleanly when the user selects the Exit option.
+
+## 2. IPO Chart (INPUT -PROCESS -OUTPUT)
+
+| Input | Processing | Output |
+|---|---|---|
+| `main_choice` (1–4) | Display the main menu and validate the user's choice using a while loop. | Main menu and invalid choice message |
+| `income_choice` (1–3) | Display the Income Menu, validate the category, and select Design, Coding, or User Documentation. | Income menu and category selection |
+| `amount` (>= 0) | Validate the income amount and add it to the correct income category. | Success message showing the amount and category |
+| `expense_choice` (1–3) | Display the Expense Menu, validate the category, and select Software, Equipment, or Workspace. | Expense menu and category selection |
+| `amount` (>= 0) | Validate the expense amount and add it to the correct expense category. | Success message showing the amount and category |
+| No additional input | Calculate total income, total expenses, and net balance. Check if the balance is positive, negative, or zero. | Financial Summary showing Total Income, Total Expenses, Net Balance, and Status |
+| `main_choice = 4` | End the program. | "Thank you for using Personal Budget Tracker. Goodbye!" |
+
+## Pseudocode
+
 ````
 MODULE MAIN()
 
