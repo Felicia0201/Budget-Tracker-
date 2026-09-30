@@ -12,10 +12,10 @@ Freelancers need a console-based interface to log earnings and spending across s
 **Scope:**
 * Features a continuous main menu loop with two hierarchical submenus (Income Menu and Expense Menu).
 * Enforces menu choice validation for the Main Menu (rejecting selections outside 1–4) and Submenus (rejecting selections outside 1–3).
-*Validates monetary entry inputs to ensure amounts are non-negative ($\ge 0$).
-*Categorizes and aggregates income (Design, Coding, User Documentation) and expenses (Software, Equipment, Workspace) in memory during execution.
-*Calculates and displays net financial standing along with a status message (Profit, Loss, or Even) on demand.
-*Terminates execution cleanly when the user selects the Exit option.
+* Validates monetary entry inputs to ensure amounts are non-negative ($\ge 0$).
+* Categorizes and aggregates income (Design, Coding, User Documentation) and expenses (Software, Equipment, Workspace) in memory during execution.
+* Calculates and displays net financial standing along with a status message (Profit, Loss, or Even) on demand.
+* Terminates execution cleanly when the user selects the Exit option.
 
 ## 2. IPO Chart (INPUT -PROCESS -OUTPUT)
 
